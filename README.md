@@ -1,1 +1,1 @@
-# chmelnytzkin25s7.github.io
+# chmelnytzkin25s7
