@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Week 4</title>
 </head>
+
 <body>
-    <h1 colour="#444444"> Week 4</h1>
+    <h1> Week 4: HTML Table </h1>
+    <table border="5px">
+        <caption> Student List: INFT1206</caption>
+        <thead style="background-color: #990000;">
+            <tr>
+                <th> Num </th>
+                <th> Name </th>
+                <th> Program </th>
+            </tr>
+        </thead>
+        <tbody style="background-color: #44DD44;">
+            <colgroup>
+                <col />
+                <col style="background-color: cornflowerblue;">
+                <col style="background-color: #44DD44;">
+            </colgroup>
+            <tr>
+                <td> 1 </td>
+                <td> Programming </td>
+            </tr>
+        </tbody>
+        <tbody style="background-color: #44DD44;">
+            <tr>
+                <td> 2 </td>
+                <td> Bella </td>
+                <td rowspan="2"> IT </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td style="background-color:aqua;"> 3 </td>
+                <td style="background-color: rgb(77, 191, 236);"> Alex </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> Prepped By:</td>
+            </tr>
+                            <td>
+                    <!-- Nested Table starts here -->
+                    <table border="1">
+                        <tr>
+                            <td>First: Noah</td>
+                        </tr>
+                        <tr>
+                            <td>Last: Smith</td>
+                        </tr>
+                    </table>
+                    <!-- Nested Table ends here -->
+                </td>
+        </tfoot>
+    </table>
 </body>
+
+
 </html>
