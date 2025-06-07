@@ -1,0 +1,14 @@
+#id4 {
+    color: #770000;
+    text-align: center;
+}
+
+#id3 {
+    color: #44EE33;
+    text-align: center;
+    font-size: 25px;
+}
+#id3:hover
+{
+    color: #990093;
+}
