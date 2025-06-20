@@ -18,4 +18,8 @@ body {
     width: 200px;
     height: 200px;
     background-color: #66EEFF;
+    color: white;
+    text-align: center;
+    line-height: 190px;
+    font-size: 1.063rem;  /* 16 x 1.063 = 17.008 */
 }
