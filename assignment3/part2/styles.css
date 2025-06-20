@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
 
+    height: 40vh;
 }
 
 .coolbox {
@@ -20,6 +21,9 @@ body {
     background-color: #66EEFF;
     color: white;
     text-align: center;
+    text-shadow: 1px 1px 3px black;
     line-height: 190px;
     font-size: 1.063rem;  /* 16 x 1.063 = 17.008 */
+    border: 1px solid #44CCDD;
+    border-radius: 10px;
 }
