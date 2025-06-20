@@ -3,3 +3,14 @@ html {
 }
 
 /* Your CSS below here */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.coolbox {
+    width: 200px;
+    height: 200px;
+    background-color: #66EEFF;
+}
