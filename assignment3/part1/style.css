@@ -12,7 +12,7 @@ h1 {
 .dotted {
     border: none;
     border-top: 10px dotted purple;
-    margin-top: 5;
+    border-bottom: 10px;
     margin-bottom: 30px;
 }
 
@@ -34,4 +34,14 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+    color: green;
+}
+
+ul {
+
+    border: 5px solid purple;
+    padding: 10px;
+    background-color: #eeeeee;
+    padding: 30px;
+
 }
