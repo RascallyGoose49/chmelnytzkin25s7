@@ -24,6 +24,12 @@ body {
     text-shadow: 1px 1px 3px black;
     line-height: 190px;
     font-size: 1.063rem;  /* 16 x 1.063 = 17.008 */
+    font-size: 1.063rem;
+    /* 16 x 1.063 = 17.008 */
     border: 1px solid #44CCDD;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom right,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.2) 30%);
 }
