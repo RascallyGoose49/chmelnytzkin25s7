@@ -74,12 +74,29 @@ nav ul {
     justify-content: space-between;
 }
 
+/* Makes 'menu' options white and lack underline */
+nav a {
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
   }
   
   .photos {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Keeps the primary image to the left of the page */
+.feature {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Removes bullet points from the photos */
+.photos {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -87,4 +104,14 @@ nav ul {
 
   .feature {
       width: 200px;
-  }
+  }    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+
+/* Formatting for same images */
+.photos img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
