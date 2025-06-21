@@ -47,3 +47,30 @@ footer {
     border-bottom: 5px solid #a66;
 }
 
+/* Fonts */
+
+body {
+    font-family: Arial, Helvetica, sans-serif, serif;
+    font-size: 10px;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+}
+
+/* Edits for Headings */
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
