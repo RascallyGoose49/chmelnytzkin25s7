@@ -1,3 +1,4 @@
+/* Page design */
 body {
     background-color: #fff;
     color: #333;
@@ -11,6 +12,16 @@ body {
   }
   
   .logo {
+}
+
+/* Keeps images in check */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Page title */
+.logo {
     font-size: 200%;
     padding: 50px 20px;
     margin: 0 auto;
@@ -18,12 +29,34 @@ body {
   }
   
   .grid {
+}
+
+/* Grid for the information and photos */
+.grid {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
   }
   
   nav {
+
+    /* Makes the page two columns*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Information on the left side of the page */
+article {
+    width: 65%;
+    overflow: hidden;
+}
+
+/* Photos on the right side of the page */
+aside {
+    width: 35%;
+}
     background-color: #000;
     padding: .5em;
   }
