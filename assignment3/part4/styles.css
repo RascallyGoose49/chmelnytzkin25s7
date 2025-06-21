@@ -4,14 +4,6 @@ body {
     color: #333;
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
-
-  img {
-      max-width: 100%;
-      display: block;
-  }
-  
-  .logo {
 }
 
 /* Keeps images in check */
@@ -26,9 +18,6 @@ img {
     padding: 50px 20px;
     margin: 0 auto;
     max-width: 980px;
-  }
-  
-  .grid {
 }
 
 /* Grid for the information and photos */
@@ -36,9 +25,6 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
-  }
-  
-  nav {
 
     /* Makes the page two columns*/
     display: flex;
@@ -79,9 +65,6 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: .5em 1em;
-  }
-  
-  .photos {
     display: block;
     text-align: center;
     width: 100%;
@@ -100,11 +83,7 @@ nav a {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
 
-  .feature {
-      width: 200px;
-  }    display: grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2px;
