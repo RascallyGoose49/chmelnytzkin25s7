@@ -35,22 +35,19 @@ for (let index = 0; index < imageFilenames.length; index++) {
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', function () {
 
-    // Check the current class on the button
+    // Check the current selection on the button
     const displayedImage = btn.getAttribute('class');
 
+    // Darkens or lightens the image
     if (displayedImage == 'dark') {
-        // If class is 'dark', switch to 'light' mode
         btn.setAttribute('class', 'light');
         btn.textContent = 'Lighten';
 
-        // Applies the darkening filter
         overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';
     } else {
-        // If class is not 'dark', switch back to 'dark' mode
         btn.setAttribute('class', 'dark');
         btn.textContent = 'Darken';
 
-        // Make overlay fully transparent (no darkening)
         overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
     }
 });
