@@ -6,6 +6,9 @@ const ctx = canvas.getContext("2d");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
+const countDisplay = document.getElementById("ball-count");
+let count = 0;
+
 // function to generate random number
 
 function random(min, max) {
@@ -65,14 +68,16 @@ class EvilCircle extends Shape {
                 const distance = Math.sqrt(dx * dx + dy * dy);
 
                 if (distance < this.size + ball.size) {
-                    ball.exists = false; // Ball has been "eaten" by the EvilCircle
+                    ball.exists = false;
+                    count--;
+                    countDisplay.textContent = count;
                 }
             }
         }
     }
 }
 
-class Ball {
+class Ball extends Shape {
     constructor(x, y, velX, velY, color, size) {
         super(x, y, velX, velY);
         this.color = color;
@@ -139,21 +144,23 @@ while (balls.length < 25) {
     );
 
     balls.push(ball);
+    count++;
+    countDisplay.textContent = count;
 }
 
 window.addEventListener("keydown", (e) => {
     switch (e.key) {
         case "a":
-            this.x -= this.velX;
+            evil.x -= evil.velX;
             break;
         case "d":
-            this.x += this.velX;
+            evil.x += evil.velX;
             break;
         case "w":
-            this.y -= this.velY;
+            evil.y -= evil.velY;
             break;
         case "s":
-            this.y += this.velY;
+            evil.y += evil.velY;
             break;
     }
 });
@@ -163,12 +170,20 @@ function loop() {
     ctx.fillRect(0, 0, width, height);
 
     for (const ball of balls) {
-        ball.draw();
-        ball.update();
-        ball.collisionDetect();
+        if (ball.exists) {
+            ball.draw();
+            ball.update();
+            ball.collisionDetect();
+        }
     }
+
+    evil.draw();
+    evil.checkBounds();
+    evil.collisionDetect();
 
     requestAnimationFrame(loop);
 }
+
+const evil = new EvilCircle(width / 2, height / 2);
 
 loop();
