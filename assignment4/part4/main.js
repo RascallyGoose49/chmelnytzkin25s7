@@ -9,6 +9,8 @@ const height = (canvas.height = window.innerHeight);
 const countDisplay = document.getElementById("ball-count");
 let count = 0;
 
+const evil = new EvilCircle(width / 2, height / 2);
+
 // function to generate random number
 
 function random(min, max) {
@@ -21,6 +23,7 @@ function randomRGB() {
     return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
+/* Creates a class for Shapes */
 class Shape {
     constructor(x, y, velX, velY) {
         this.x = x;
@@ -29,6 +32,8 @@ class Shape {
         this.velY = velY;
     }
 }
+
+/* Creates a subclass for an evil circle */
 
 class EvilCircle extends Shape {
     constructor(x, y) {
@@ -76,6 +81,8 @@ class EvilCircle extends Shape {
         }
     }
 }
+
+/* Creates a subclass for circles */
 
 class Ball extends Shape {
     constructor(x, y, velX, velY, color, size) {
@@ -165,6 +172,8 @@ window.addEventListener("keydown", (e) => {
     }
 });
 
+/* Loop for ball physics updating */
+
 function loop() {
     ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
     ctx.fillRect(0, 0, width, height);
@@ -183,7 +192,5 @@ function loop() {
 
     requestAnimationFrame(loop);
 }
-
-const evil = new EvilCircle(width / 2, height / 2);
 
 loop();
