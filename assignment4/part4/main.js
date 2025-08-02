@@ -9,8 +9,6 @@ const height = (canvas.height = window.innerHeight);
 const countDisplay = document.getElementById("ball-count");
 let count = 0;
 
-const evil = new EvilCircle(width / 2, height / 2);
-
 // function to generate random number
 
 function random(min, max) {
@@ -192,5 +190,7 @@ function loop() {
 
     requestAnimationFrame(loop);
 }
+
+const evil = new EvilCircle(width / 2, height / 2);
 
 loop();
