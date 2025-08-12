@@ -128,6 +128,7 @@ main {
 
 article {
   flex: 5;
+  font-size: 1.4rem;
 }
 
 .secondary {
