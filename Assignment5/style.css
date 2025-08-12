@@ -32,7 +32,7 @@ header h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
-  text-shadow: 2px 2px 4px #000000, 0px 0px 15px #6666ff; /* Softer shadow like screenshot */
+  text-shadow: 2px 2px 4px #000000, 0px 0px 15px #000000; 
   font-family: 'Sonsie One', cursive;
 }
 
@@ -250,4 +250,16 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+.secondary font[size="6"] {
+  text-align: left;
+  font-weight: bold;
+}
+.secondary ul {
+  padding-left: 20px;
+}
+.secondary li a {
+  color: #0000ff;
+  text-decoration: underline;
 }
